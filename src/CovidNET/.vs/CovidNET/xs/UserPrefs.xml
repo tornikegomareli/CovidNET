@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{B6C2E14C-815F-428E-9E4B-F27E39F0D935}|Default">
+  <MonoDevelop.Ide.ItemProperties.CovidNET-lib FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-tests/UnitTest1.cs">
+    <Files>
+      <File FileName="CovidNET-lib/Class1.cs" Line="1" Column="1" />
+      <File FileName="CovidNET-tests/UnitTest1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CovidNET" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CovidNET-tests FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
