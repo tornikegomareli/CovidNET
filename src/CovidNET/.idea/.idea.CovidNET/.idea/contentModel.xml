@@ -18,9 +18,13 @@
           </e>
           <e p="Requester.cs" t="Include" />
         </e>
+        <e p="Managers" t="Include">
+          <e p="CovidNetManager.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
+          <e p="Informative.cs" t="Include" />
           <e p="Interfaces" t="Include">
-            <e p="ICountryState.cs" t="Include" />
+            <e p="IInformative.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -48,6 +52,18 @@
       </e>
       <e p="CovidNET.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Test" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Test.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Test.csproj" t="IncludeRecursive" />
+      </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_CovidNET.-1936417063.00" t="ExcludeRecursive" />
