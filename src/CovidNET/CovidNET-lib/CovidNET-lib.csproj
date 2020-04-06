@@ -12,4 +12,7 @@
     <Folder Include="Utilities\" />
     <Folder Include="Http\Interfaces\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
 </Project>
