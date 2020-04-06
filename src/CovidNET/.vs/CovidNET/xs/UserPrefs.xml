@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CvoidDataManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CovidDataManager.cs">
     <Files>
       <File FileName="CovidNET-tests/UnitTest1.cs" Line="16" Column="9" />
       <File FileName="CovidNET-lib/Utilities/Constants.cs" />
@@ -10,13 +10,15 @@
       <File FileName="CovidNET-lib/Models/Informative.cs" Line="22" Column="1" />
       <File FileName="CovidNET-lib/Models/Interfaces/IInformative.cs" Line="18" Column="44" />
       <File FileName="CovidNET-lib/CovidNetClient.cs" Line="8" Column="6" />
-      <File FileName="CovidNET-lib/CvoidDataManager.cs" Line="9" Column="5" />
+      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
-            <Node name="CovidNET-lib" expanded="True" />
+            <Node name="CovidNET-lib" expanded="True">
+              <Node name="CovidDataManager.cs" selected="True" />
+            </Node>
             <Node name="Test" expanded="True" />
           </Node>
         </State>
