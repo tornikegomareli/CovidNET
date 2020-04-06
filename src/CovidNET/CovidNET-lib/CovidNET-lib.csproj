@@ -5,4 +5,11 @@
     <RootNamespace>CovidNET_lib</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+    <Folder Include="Http\Interfaces\" />
+  </ItemGroup>
 </Project>
