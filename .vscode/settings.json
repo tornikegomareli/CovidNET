@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "src/CovidNET/CovidNET-lib/bin/Debug/netstandard2.1": true,
+    "src/CovidNET/CovidNET-lib/bin": true,
+    "src/CovidNET/CovidNET-lib/obj": true,
+    "src/CovidNET/CovidNET-tests/bin": true,
+    "src/CovidNET/CovidNET-tests/obj": true
+  }
+}

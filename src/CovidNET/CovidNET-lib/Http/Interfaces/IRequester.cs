@@ -5,6 +5,10 @@ namespace CovidNET_lib.Http.Interfaces
 {
     public interface IRequester
     {
-           Task<string> CreateGetRequestAsync(string relativeUrl);
+            /// <summary>
+            /// Create a get request and send it asynchronously to the server.
+            /// </summary>
+            /// <returns>The content of the response.</returns>
+           Task<string> CreateGetRequestAsync();
     }
 }

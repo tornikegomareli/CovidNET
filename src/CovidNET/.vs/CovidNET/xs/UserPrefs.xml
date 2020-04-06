@@ -5,7 +5,7 @@
       <File FileName="CovidNET-tests/UnitTest1.cs" Line="16" Column="9" />
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="9" Column="1" />
       <File FileName="CovidNET-lib/Http/RequesterBase.cs" Line="6" Column="1" />
-      <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" Line="1" Column="1" />
+      <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
