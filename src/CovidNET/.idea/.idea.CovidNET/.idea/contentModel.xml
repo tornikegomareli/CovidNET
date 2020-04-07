@@ -25,6 +25,7 @@
         </e>
         <e p="Models" t="Include">
           <e p="CountryState.cs" t="Include" />
+          <e p="GlobalInfo.cs" t="Include" />
           <e p="GlobalInfoByDate.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="ICountryState.cs" t="Include" />
