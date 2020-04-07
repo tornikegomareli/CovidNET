@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CovidDataManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CovidNetClient.cs">
     <Files>
       <File FileName="CovidNET-tests/UnitTest1.cs" Line="16" Column="9" />
       <File FileName="CovidNET-lib/Utilities/Constants.cs" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" Line="9" Column="1" />
       <File FileName="CovidNET-lib/Http/Requester.cs" Line="1" Column="1" />
-      <File FileName="Test/Program.cs" Line="16" Column="58" />
+      <File FileName="Test/Program.cs" Line="20" Column="1" />
       <File FileName="CovidNET-lib/Models/Informative.cs" Line="22" Column="1" />
       <File FileName="CovidNET-lib/Models/Interfaces/IInformative.cs" Line="9" Column="8" />
       <File FileName="CovidNET-lib/CovidNetClient.cs" Line="21" Column="1" />
-      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="24" Column="1" />
-      <File FileName="CovidNET-lib/Utilities/Converters.cs" Line="21" Column="1" />
+      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="36" Column="1" />
+      <File FileName="CovidNET-lib/Utilities/Converters.cs" Line="16" Column="76" />
       <File FileName="CovidNET-lib/Extensions/TypeExtensions.cs" Line="18" Column="60" />
     </Files>
     <Pads>
@@ -19,8 +19,7 @@
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
             <Node name="CovidNET-lib" expanded="True">
-              <Node name="Utilities" expanded="True" />
-              <Node name="CovidDataManager.cs" selected="True" />
+              <Node name="CovidNetClient.cs" selected="True" />
             </Node>
             <Node name="Test" expanded="True" />
           </Node>
@@ -34,9 +33,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/Test/Program.cs" relfile="Test/Program.cs" line="17" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidNetClient.cs" relfile="CovidNET-lib/CovidNetClient.cs" line="28" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidNetClient.cs" relfile="CovidNET-lib/CovidNetClient.cs" line="21" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidDataManager.cs" relfile="CovidNET-lib/CovidDataManager.cs" line="12" column="1" />
+      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidDataManager.cs" relfile="CovidNET-lib/CovidDataManager.cs" line="28" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

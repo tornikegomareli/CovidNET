@@ -31,5 +31,10 @@ namespace CovidNET_lib
 
            return collection;
         }
+
+        public ICountryState GetGlobalStatisticsByDate(DateTime date)
+        {
+            
+        }
     }
 }
