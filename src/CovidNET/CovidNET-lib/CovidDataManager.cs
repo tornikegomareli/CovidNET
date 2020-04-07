@@ -48,6 +48,15 @@ namespace CovidNET_lib
 
             return content;
         }
-        
+
+        internal async Task<string> GetLatestGlobalInfoJsonContentAsync()
+        {
+            var url = UrlManager.GlobalInfoUrl;
+            
+            var request = new Requester(url);
+            var content = await request.CreateGetRequestAsync();
+
+            return content;
+        }
     }
 }

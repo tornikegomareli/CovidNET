@@ -50,7 +50,17 @@ namespace CovidNET_lib
 
         public async Task<GlobalInfo> GetLatestGlobalInfo()
         {
-            var content = await _c
+            var content = await _covidManager.GetLatestGlobalInfoJsonContentAsync();
+
+            var globalInfo = content.ToGlobalInfo();
+
+            return new GlobalInfo()
+            {
+                Date = DateTime.Now.Date,
+                Deaths =  globalInfo.Deaths,
+                Recovered = globalInfo.Recovered,
+                Confirmed = globalInfo.Cases
+            };
         }
     }
 }
