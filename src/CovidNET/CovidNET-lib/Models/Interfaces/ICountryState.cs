@@ -3,18 +3,20 @@ using Newtonsoft.Json;
 
 namespace CovidNET_lib.Models.Interfaces
 {
-    public interface IInformative
+    public interface ICountryState
     {
         [JsonProperty("date")]
-        public string Date { get; set; }
+        string Date { get; set; }
 
         [JsonProperty("confirmed")]
-        public long Confirmed { get; set; }
+        long Confirmed { get; set; }
 
         [JsonProperty("deaths")]
-        public long Deaths { get; set; }
+        long Deaths { get; set; }
 
         [JsonProperty("recovered")]
-        public long Recovered { get; set; }
+        long Recovered { get; set; }
+
+        DateTime SpecificDateTime { get; set; }
     }
 }

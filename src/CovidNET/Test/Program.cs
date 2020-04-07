@@ -15,28 +15,6 @@ namespace Test
 
             var sr = requester.CreateGetRequestAsync().Result;
 
-            var data = JsonConvert.DeserializeObject<List<Country>>(sr);
         }
     }
-}
-
-public partial class Country
-{
-    public string name { get; set; }
-    public List<Welcome> stats { get; set; }
-}
-
-public partial class Welcome
-{
-    [JsonProperty("date")]
-    public string Date { get; set; }
-
-    [JsonProperty("confirmed")]
-    public long Confirmed { get; set; }
-
-    [JsonProperty("deaths")]
-    public long Deaths { get; set; }
-
-    [JsonProperty("recovered")]
-    public long Recovered { get; set; }
 }

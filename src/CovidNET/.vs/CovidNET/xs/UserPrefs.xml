@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CovidDataManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/Utilities/JsonManager.cs">
     <Files>
       <File FileName="CovidNET-tests/UnitTest1.cs" Line="16" Column="9" />
       <File FileName="CovidNET-lib/Utilities/Constants.cs" />
@@ -8,16 +8,20 @@
       <File FileName="CovidNET-lib/Http/Requester.cs" Line="1" Column="1" />
       <File FileName="Test/Program.cs" Line="18" Column="9" />
       <File FileName="CovidNET-lib/Models/Informative.cs" Line="22" Column="1" />
-      <File FileName="CovidNET-lib/Models/Interfaces/IInformative.cs" Line="18" Column="44" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="8" Column="6" />
-      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="6" Column="9" />
+      <File FileName="CovidNET-lib/Models/Interfaces/IInformative.cs" Line="9" Column="8" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="23" Column="1" />
+      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="36" Column="4" />
+      <File FileName="CovidNET-lib/Utilities/Converters.cs" Line="21" Column="1" />
+      <File FileName="CovidNET-lib/Utilities/JsonManager.cs" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
             <Node name="CovidNET-lib" expanded="True">
-              <Node name="CovidDataManager.cs" selected="True" />
+              <Node name="Utilities" expanded="True">
+                <Node name="JsonManager.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Test" expanded="True" />
           </Node>
