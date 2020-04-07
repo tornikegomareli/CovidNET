@@ -26,13 +26,19 @@ namespace CovidNET_lib
             _covidManager.SetSource(content);
 		}
 
-        public IEnumerable<ICountryState> GetCountryStatisticsByName(string countryName)
+        public IEnumerable<CovidInfo> GetCountryTimeSeriesByName(string countryName)
         {
            var source = _covidManager.GetWholeCountryInfoJsonContentByName(countryName);
 
            var collection = source.ToCountryState();
 
-           return collection;
+           return collection.Select(o => new CovidInfo()
+           {
+               Date = o.SpecificDateTime,
+               Deaths = o.Deaths,
+               Confirmed = o.Confirmed,
+               Recovered = o.Recovered,
+           });
         }
 
         public async Task<CovidInfo> GetGlobalInfoByDateAsync(DateTime date)
@@ -64,13 +70,21 @@ namespace CovidNET_lib
             };
         }
 
-        public List<CountryState> GetCountryTimeSeries(string country, DateTime from, DateTime to)
+        public IEnumerable<CovidInfo> GetCountryTimeSeries(string country, DateTime from, DateTime to)
         {
-            return _covidManager.CountryTimeSeriesCollection(country, from, to)
+            var countryTimeSeries = _covidManager.CountryTimeSeriesCollection(country, from, to)
                                 .ToList();
+
+            return countryTimeSeries.Select(o => new CovidInfo()
+            {
+                Date = o.SpecificDateTime,
+                Deaths = o.Deaths,
+                Confirmed = o.Confirmed,
+                Recovered = o.Recovered,
+            });
         }
 
-        public async Task<List<CovidCountryStats>> GetCurrentAllCovidCountryStatsAsync()
+        public async Task<IEnumerable<CovidCountryStats>> GetCurrentAllCovidCountryStatsAsync()
         {
             var content = await _covidManager.GetCovidCountryJsonContent();
 
