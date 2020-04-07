@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CovidNET_lib;
 using CovidNET_lib.Http;
 using Newtonsoft.Json;
 
@@ -9,12 +10,10 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var current = new CovidNetClient();
+            current.InitCovidDataAsync().Wait();
 
-            var requester = new Requester("https://pomber.github.io/covid19/timeseries.json");
-
-            var sr = requester.CreateGetRequestAsync().Result;
-
+            var data = current.GetCountryStatisticsByName("Georgia");
         }
     }
 }

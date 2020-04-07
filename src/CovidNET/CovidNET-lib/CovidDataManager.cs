@@ -1,34 +1,35 @@
 ﻿using System;
+using CovidNET_lib.Utilities;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
 namespace CovidNET_lib
 {
     internal class CovidDataManager
     {
-        private static CovidDataManager _instance;
-        private static object _lockRoot = new object();
-        private CovidDataManager()
-        {
-        }
+        private string _jsonSource;
 
-        internal string CovidJsonSource { get; set; }
-
-        public static CovidDataManager Instance
+        internal void SetSource(string json)
         {
-			get
-            {
-				if(_instance == null)
-                {
-					lock(_instance)
-                    {
-						if(_instance == null) 
-						{
-                            _instance = new CovidDataManager();
-						} 
-					} 
-				}
-                return _instance;
-            }
+            _jsonSource = json;
 		}
 
 
+        internal string GetCountryDataByName(string countryName)
+        {
+            var specificElements = FindElementFromkey(countryName);
+
+            return specificElements;
+		}
+
+
+        internal string FindElementFromkey(string key)
+        {
+            var cobj = (JObject)JsonConvert.DeserializeObject(_jsonSource);
+
+            var element = cobj[key];
+
+            return element.ToString();
+        }
     }
 }
