@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/Exceptions/CovidDataNotFoundException.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/Exceptions/IncorrectDateTimesException.cs">
     <Files>
       <File FileName="CovidNET-tests/UnitTest1.cs" Line="16" Column="9" />
       <File FileName="CovidNET-lib/Utilities/Constants.cs" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
       <File FileName="CovidNET-lib/Http/Requester.cs" Line="18" Column="35" />
-      <File FileName="Test/Program.cs" Line="18" Column="1" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="68" Column="6" />
+      <File FileName="Test/Program.cs" Line="22" Column="1" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="113" Column="45" />
       <File FileName="CovidNET-lib/CovidDataManager.cs" Line="55" Column="1" />
       <File FileName="CovidNET-lib/Utilities/Converters.cs" />
       <File FileName="CovidNET-lib/Exceptions/StringIsNullOrEmptyException.cs" Line="4" Column="46" />
       <File FileName="CovidNET-lib/Exceptions/CountryNotFoundException.cs" Line="4" Column="42" />
-      <File FileName="CovidNET-lib/Exceptions/CovidDataNotFoundException.cs" Line="6" Column="44" />
+      <File FileName="CovidNET-lib/Exceptions/CovidDataNotFoundException.cs" Line="6" Column="72" />
+      <File FileName="CovidNET-lib/Exceptions/IncorrectDateTimesException.cs" Line="6" Column="74" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +21,7 @@
           <Node name="CovidNET" expanded="True">
             <Node name="CovidNET-lib" expanded="True">
               <Node name="Exceptions" expanded="True">
-                <Node name="CovidDataNotFoundException.cs" selected="True" />
+                <Node name="IncorrectDateTimesException.cs" selected="True" />
               </Node>
               <Node name="Http" expanded="True" />
             </Node>
@@ -36,7 +37,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/Test/Program.cs" relfile="Test/Program.cs" line="20" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidNetClient.cs" relfile="CovidNET-lib/CovidNetClient.cs" line="72" column="1" />
+      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidNetClient.cs" relfile="CovidNET-lib/CovidNetClient.cs" line="77" column="1" />
       <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidDataManager.cs" relfile="CovidNET-lib/CovidDataManager.cs" line="48" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

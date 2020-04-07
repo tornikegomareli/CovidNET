@@ -85,6 +85,10 @@ namespace CovidNET_lib
             };
         }
 
+
+        /// <summary>
+        /// Get latest global covid info of deathrate, recovered and confirmed
+        /// </summary>
         public async Task<CovidInfo> GetLatestGlobalInfoAsync()
         {
             var content = await _covidManager.GetLatestGlobalInfoJsonContentAsync();
@@ -100,6 +104,14 @@ namespace CovidNET_lib
             };
         }
 
+
+        /// <summary>
+        /// Get specific country Time series of covid info between range of Dates
+        /// </summary>
+        /// <param name="country">string</param>
+        /// <param name="from">DateTime</param>
+        /// <param name="to">DateTime</param>
+        /// <exception cref="CovidDataNotFoundException"></exception>
         public IEnumerable<CovidInfo> GetCountryTimeSeries(string country, DateTime from, DateTime to)
         {
             var countryTimeSeries = _covidManager.CountryTimeSeriesCollection(country, from, to)
