@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
+using CovidNET_lib.Extensions;
 using CovidNET_lib.Http;
+using CovidNET_lib.Models;
 using CovidNET_lib.Utilities;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -18,7 +22,7 @@ namespace CovidNET_lib
 		}
 
 
-        internal string GetCountryDataByName(string countryName)
+        internal string GetWholeCountryInfoJsonContentByName(string countryName)
         {
             var specificElements = FindElementFromkey(countryName);
 
@@ -26,7 +30,7 @@ namespace CovidNET_lib
 		}
 
 
-        internal string FindElementFromkey(string key)
+        private string FindElementFromkey(string key)
         {
             var cobj = (JObject)JsonConvert.DeserializeObject(_jsonSource);
 
@@ -57,6 +61,26 @@ namespace CovidNET_lib
             var content = await request.CreateGetRequestAsync();
 
             return content;
+        }
+
+        internal IEnumerable<CountryState> CountryTimeSeriesCollection(string country, DateTime from, DateTime to)
+        {
+            var wholeCountryContent = FindElementFromkey(country);
+
+            var countryStates = wholeCountryContent.ToCountryState();
+
+            foreach (var state in countryStates)
+            {
+                state.SpecificDateTime = Converters.StringToDateTime(state.Date);
+            }
+
+            var fromDate = from.Date;
+            var toDate = to.Date;
+
+            var indexOfFromDate = countryStates.IndexOf(countryStates.FirstOrDefault(o => o.SpecificDateTime.Date == fromDate));
+            var indexOfToDate = countryStates.IndexOf(countryStates.FirstOrDefault(o => o.SpecificDateTime == toDate));
+
+            return countryStates.Skip(indexOfFromDate).Take(indexOfToDate - indexOfFromDate);
         }
     }
 }

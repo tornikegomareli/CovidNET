@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
 using CovidNET_lib.Extensions;
 using CovidNET_lib.Http;
@@ -27,7 +28,7 @@ namespace CovidNET_lib
 
         public IEnumerable<ICountryState> GetCountryStatisticsByName(string countryName)
         {
-           var source = _covidManager.GetCountryDataByName(countryName);
+           var source = _covidManager.GetWholeCountryInfoJsonContentByName(countryName);
 
            var collection = source.ToCountryState();
 
@@ -61,6 +62,12 @@ namespace CovidNET_lib
                 Recovered = globalInfo.Recovered,
                 Confirmed = globalInfo.Cases
             };
+        }
+
+        public List<CountryState> GetCountryTimeSeries(string country, DateTime from, DateTime to)
+        {
+            return _covidManager.CountryTimeSeriesCollection(country, from, to)
+                                .ToList();
         }
     }
 }
