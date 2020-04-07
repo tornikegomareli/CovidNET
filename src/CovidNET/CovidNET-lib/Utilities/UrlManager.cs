@@ -9,5 +9,10 @@ namespace CovidNET_lib.Utilities
          {
              return AllCountriesUrl + "/" + country;
          }
+
+         internal static string GlobalInfoByDate(string date)
+         {
+             return Constants.CovidApiInfoBaseUrl + $"/{date}";
+         }
      }
  }

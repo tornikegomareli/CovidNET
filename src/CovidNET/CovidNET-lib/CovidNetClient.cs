@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using CovidNET_lib.Extensions;
 using CovidNET_lib.Http;
+using CovidNET_lib.Models;
 using CovidNET_lib.Models.Interfaces;
 using CovidNET_lib.Utilities;
 
@@ -32,7 +33,7 @@ namespace CovidNET_lib
            return collection;
         }
 
-        public ICountryState GetGlobalStatisticsByDate(DateTime date)
+        public GlobalInfo GetGlobalStatisticsByDate(DateTime date)
         {
             
         }
