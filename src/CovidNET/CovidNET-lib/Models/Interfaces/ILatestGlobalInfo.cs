@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace CovidNET_lib.Models.Interfaces
 {
-    public interface IGlobalInfo
+    public interface ILatestGlobalInfo
     {
         [JsonProperty("cases")]
         long Cases { get; set; }
