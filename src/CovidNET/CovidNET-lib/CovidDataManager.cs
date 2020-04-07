@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using CovidNET_lib.Exceptions;
 using CovidNET_lib.Extensions;
 using CovidNET_lib.Http;
 using CovidNET_lib.Models;
@@ -35,7 +36,10 @@ namespace CovidNET_lib
             var cobj = (JObject)JsonConvert.DeserializeObject(_jsonSource);
 
             var element = cobj[key];
-
+            if(element == null)
+            {
+                throw new CountryNotFoundException();
+			}
             return element.ToString();
         }
 

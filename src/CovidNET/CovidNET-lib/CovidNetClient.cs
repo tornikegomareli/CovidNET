@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using CovidNET_lib.Exceptions;
 using CovidNET_lib.Extensions;
 using CovidNET_lib.Http;
 using CovidNET_lib.Models;
@@ -18,6 +19,10 @@ namespace CovidNET_lib
     {
         private CovidDataManager _covidManager;
 
+
+        /// <summary>
+        /// Initializes Covid client, which will sync the newest data from API's
+        /// </summary>
         public async Task InitCovidDataAsync()
 		{
             var request = new Requester(Constants.PomberUrl);
@@ -33,9 +38,15 @@ namespace CovidNET_lib
         /// Get specific countries time series, from 22 January.
         /// </summary>
         /// <param name="acountryName">The Country Name</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="CountryNotFoundException">counryName</exception>
+        /// <exception cref="StringIsNullOrEmptyException">counryName</exception>
         public IEnumerable<CovidInfo> GetCountryTimeSeriesByName(string countryName)
         {
+            if (string.IsNullOrEmpty(countryName))
+            {
+                throw new StringIsNullOrEmptyException();
+            }
+            
            var source = _covidManager.GetWholeCountryInfoJsonContentByName(countryName);
 
            var collection = source.ToCountryState();

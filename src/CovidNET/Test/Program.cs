@@ -13,6 +13,7 @@ namespace Test
             var current = new CovidNetClient();
             current.InitCovidDataAsync().Wait();
 
+            current.GetCountryTimeSeriesByName("kle");
         }
     }
 }

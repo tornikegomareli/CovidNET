@@ -12,6 +12,7 @@
     <Folder Include="Utilities\" />
     <Folder Include="Http\Interfaces\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
