@@ -115,11 +115,20 @@ namespace CovidNET_lib
         /// <exception cref="IncorrectDateTimesException"></exception>
         public IEnumerable<CovidInfo> GetCountryTimeSeries(string country, DateTime from, DateTime to)
         {
-
             if(from < to)
             {
                 throw new IncorrectDateTimesException(); 
 			}
+
+            if (from < new DateTime(2020, 1, 22))
+            {
+                throw new CovidDataNotFoundException();
+            }
+
+            if(to > DateTime.Now)
+            {
+                throw new CovidDataNotFoundException();
+            }
 
             var countryTimeSeries = _covidManager.CountryTimeSeriesCollection(country, from, to)
                                 .ToList();
@@ -133,6 +142,10 @@ namespace CovidNET_lib
             });
         }
 
+
+        /// <summary>
+        /// All Covid countries statistics from first case till today.
+        /// </summary>
         public async Task<IEnumerable<CovidCountryStats>> GetCurrentAllCovidCountryStatsAsync()
         {
             var content = await _covidManager.GetCovidCountryJsonContent();
@@ -142,6 +155,10 @@ namespace CovidNET_lib
             return globalCountriesInfo;
         }
 
+        /// <summary>
+        /// Specific country covid info, from first case till today
+        /// </summary>
+        /// <param name="country">string</param>
         public async Task<CovidCountryStats> GetCurrentCovidInfoByCountry(string country)
         {
             var content = await _covidManager.GetCovidInfoContentByCountryName(country);
@@ -151,9 +168,20 @@ namespace CovidNET_lib
             return covidCountryStat;
         }
 
-
+        /// <summary>
+        /// Get's specific country info by date
+        /// </summary>
+        /// <param name="country">string</param>
+        /// <param name="dateTime">DateTime</param>
+        /// <exception cref="CovidDataNotFoundException"></exception>
+        /// <exception cref="IncorrectDateTimesException"></exception>
         public async Task<CovidInfo> GetCovidCountryInfoByDate(string countryName, DateTime dateTime)
         {
+            if(dateTime > DateTime.Now)
+            {
+                throw new IncorrectDateTimesException();
+			}
+
             var covidCountryElement = _covidManager.GetCovidCountryElementByDate(countryName, dateTime);
 
             return new CovidInfo()
