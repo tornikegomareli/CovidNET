@@ -13,6 +13,11 @@ namespace CovidNET_lib.Extensions
             return JsonConvert.DeserializeObject<List<CountryState>>(json);
 		}
 
+        internal static GlobalInfo ToGlobalInfo(this string json)
+        {
+            return JsonConvert.DeserializeObject<GlobalInfo>(json);
+        }
+
         internal static string ToJson(List<CountryState> collection)
         {
             return JsonConvert.SerializeObject(collection);

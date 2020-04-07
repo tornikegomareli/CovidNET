@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using CovidNET_lib.Extensions;
 using CovidNET_lib.Http;
@@ -33,9 +34,19 @@ namespace CovidNET_lib
            return collection;
         }
 
-        public GlobalInfo GetGlobalStatisticsByDate(DateTime date)
+        public async Task<GlobalInfo> GetGlobalStatisticsByDateAsync(DateTime date)
         {
+            var dateStr = date
+                .Date
+                .ToString(CultureInfo.InvariantCulture);
+
+            var url = UrlManager.GlobalInfoByDate(dateStr);
             
+            var request = new Requester(url);
+            var content = await request.CreateGetRequestAsync();
+            var globalInfo = content.ToGlobalInfo();
+
+            return globalInfo;
         }
     }
 }
