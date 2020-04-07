@@ -16,4 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CovidNET-lib\CovidNET-lib.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CovidClientTests\" />
+  </ItemGroup>
 </Project>
