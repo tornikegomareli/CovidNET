@@ -14,7 +14,7 @@ namespace Test
             current.InitCovidDataAsync().Wait();
 
             // exception is happening
-            var s = current.GetGlobalInfoByDateAsync(DateTime.Now.Date);
+            var s = current.GetGlobalInfoByDateAsync(DateTime.Now.Date).Result;
         }
     }
 }
