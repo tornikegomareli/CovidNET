@@ -35,12 +35,12 @@ namespace CovidNET_lib
            return collection;
         }
 
-        public async Task<GlobalInfo> GetGlobalInfoByDateAsync(DateTime date)
+        public async Task<CovidInfo> GetGlobalInfoByDateAsync(DateTime date)
         {
             var content = await _covidManager.GetGlobalInfoByDateJsonContentAsync(date);
             var globalInfo = content.ToGlobalInfoByDate();
 
-            return new GlobalInfo()
+            return new CovidInfo()
             {
                Date = globalInfo.Date.UtcDateTime,
                Confirmed = globalInfo.Result.Confirmed,
@@ -49,13 +49,13 @@ namespace CovidNET_lib
             };
         }
 
-        public async Task<GlobalInfo> GetLatestGlobalInfo()
+        public async Task<CovidInfo> GetLatestGlobalInfoAsync()
         {
             var content = await _covidManager.GetLatestGlobalInfoJsonContentAsync();
 
             var globalInfo = content.ToGlobalInfo();
 
-            return new GlobalInfo()
+            return new CovidInfo()
             {
                 Date = DateTime.Now.Date,
                 Deaths =  globalInfo.Deaths,
@@ -68,6 +68,38 @@ namespace CovidNET_lib
         {
             return _covidManager.CountryTimeSeriesCollection(country, from, to)
                                 .ToList();
+        }
+
+        public async Task<List<CovidCountryStats>> GetCurrentAllCovidCountryStatsAsync()
+        {
+            var content = await _covidManager.GetCovidCountryJsonContent();
+
+            var globalCountriesInfo = content.ToAllCovidCountryStat();
+
+            return globalCountriesInfo;
+        }
+
+        public async Task<CovidCountryStats> GetCurrentCovidInfoByCountry(string country)
+        {
+            var content = await _covidManager.GetCovidInfoContentByCountryName(country);
+
+            var covidCountryStat = content.ToCovidCountryStat();
+
+            return covidCountryStat;
+        }
+
+
+        public async Task<CovidInfo> GetCovidCountryInfoByDate(string countryName, DateTime dateTime)
+        {
+            var covidCountryElement = _covidManager.GetCovidCountryElementByDate(countryName, dateTime);
+
+            return new CovidInfo()
+            {
+                Date =  covidCountryElement.SpecificDateTime,
+                Confirmed = covidCountryElement.Confirmed,
+                Deaths =  covidCountryElement.Deaths,
+                Recovered = covidCountryElement.Recovered
+            };
         }
     }
 }

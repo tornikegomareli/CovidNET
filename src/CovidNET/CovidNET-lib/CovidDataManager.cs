@@ -82,5 +82,42 @@ namespace CovidNET_lib
 
             return countryStates.Skip(indexOfFromDate).Take(indexOfToDate - indexOfFromDate);
         }
+
+        internal async Task<string> GetCovidCountryJsonContent()
+        {
+            var url = UrlManager.AllCountriesUrl;
+            
+            var request = new Requester(url);
+            
+            var content = await request.CreateGetRequestAsync();
+
+            return content;
+        }
+
+        internal async Task<string> GetCovidInfoContentByCountryName(string countryName)
+        {
+            var url = UrlManager.SpecificCountryUrl(countryName);
+            var request = new Requester(url);
+
+            var content = await request.CreateGetRequestAsync();
+
+            return content;
+        }
+
+        internal CountryState GetCovidCountryElementByDate(string countryName, DateTime dateTime)
+        {
+            var element = FindElementFromkey(countryName);
+
+            var countryStats = element.ToCountryState();
+
+            foreach (var countryStat in countryStats)
+            {
+                countryStat.SpecificDateTime = Converters.StringToDateTime(countryStat.Date);
+            }
+
+            var wantedDateElement = countryStats.FirstOrDefault(o => o.SpecificDateTime == dateTime.Date);
+
+            return wantedDateElement;
+        }
     }
 }

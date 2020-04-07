@@ -27,5 +27,15 @@ namespace CovidNET_lib.Extensions
         {
             return JsonConvert.SerializeObject(collection);
 		}
+
+        internal static List<CovidCountryStats> ToAllCovidCountryStat(this string json)
+        {
+            return JsonConvert.DeserializeObject<List<CovidCountryStats>>(json);
+        }
+
+        internal static CovidCountryStats ToCovidCountryStat(this string json)
+        {
+            return JsonConvert.DeserializeObject<CovidCountryStats>(json);
+        }
     }
 }
