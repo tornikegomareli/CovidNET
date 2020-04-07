@@ -13,7 +13,7 @@ namespace CovidNET_lib.Utilities
             var copiedCollection = dataSource;
             foreach(var source in copiedCollection)
             {
-                source.SpecificDateTime = StringToDateTime(source.Date);
+                source.SpecificDateTime = StringToDateTime(source.Date).Date;
 			}
 
             return copiedCollection;
