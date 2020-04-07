@@ -13,7 +13,6 @@ namespace Test
             var current = new CovidNetClient();
             current.InitCovidDataAsync().Wait();
 
-            var data = current.GetCountryStatisticsByName("Georgia");
         }
     }
 }

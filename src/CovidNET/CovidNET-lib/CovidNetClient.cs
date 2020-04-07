@@ -11,6 +11,9 @@ using CovidNET_lib.Utilities;
 
 namespace CovidNET_lib
 {
+    /// <summary>
+    /// A  CvoidClient which is responsible for all the API calls
+    /// </summary>
     public class CovidNetClient
     {
         private CovidDataManager _covidManager;
@@ -26,6 +29,11 @@ namespace CovidNET_lib
             _covidManager.SetSource(content);
 		}
 
+        /// <summary>
+        /// Get specific countries time series, from 22 January.
+        /// </summary>
+        /// <param name="acountryName">The Country Name</param>
+        /// <exception cref="ArgumentNullException"></exception>
         public IEnumerable<CovidInfo> GetCountryTimeSeriesByName(string countryName)
         {
            var source = _covidManager.GetWholeCountryInfoJsonContentByName(countryName);
