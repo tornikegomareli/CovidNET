@@ -1,8 +1,8 @@
 using NUnit.Framework;
 
-namespace CovidNET_tests
+namespace CovidNET_tests.CovidClientTests
 {
-    public class Tests
+    public class ClientTests
     {
         [SetUp]
         public void Setup()
