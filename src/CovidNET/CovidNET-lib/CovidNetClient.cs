@@ -23,6 +23,7 @@ namespace CovidNET_lib
         /// <summary>
         /// Initializes Covid client, which will sync the newest data from API's
         /// </summary>
+        /// <exception cref="AggregateException">counryName</exception>
         public async Task InitCovidDataAsync()
 		{
             var request = new Requester(Constants.PomberUrl);
@@ -60,8 +61,18 @@ namespace CovidNET_lib
            });
         }
 
+        /// <summary>
+        /// Get global covid info on specific Date
+        /// </summary>
+        /// <param name="DateTime">date</param>
+        /// <exception cref="CovidDataNotFoundException"></exception>
         public async Task<CovidInfo> GetGlobalInfoByDateAsync(DateTime date)
         {
+            if(date < new DateTime(2020, 1, 22))
+            {
+                throw new CovidDataNotFoundException();
+			}
+
             var content = await _covidManager.GetGlobalInfoByDateJsonContentAsync(date);
             var globalInfo = content.ToGlobalInfoByDate();
 

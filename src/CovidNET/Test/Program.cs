@@ -13,7 +13,9 @@ namespace Test
             var current = new CovidNetClient();
             current.InitCovidDataAsync().Wait();
 
-            current.GetCountryTimeSeriesByName("kle");
+            current.GetCountryTimeSeriesByName("Georgia");
+            var februa = new DateTime(2019, 04, 6);
+            var s = current.GetGlobalInfoByDateAsync(februa).Result;
         }
     }
 }
