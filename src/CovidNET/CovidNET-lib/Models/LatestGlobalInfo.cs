@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace CovidNET_lib.Models
 {
-    public class GlobalInfo : IGlobalInfo
+    public class LatestGlobalInfo : ILatestGlobalInfo
     {
             [JsonProperty("cases")]
             public long Cases { get; set; }

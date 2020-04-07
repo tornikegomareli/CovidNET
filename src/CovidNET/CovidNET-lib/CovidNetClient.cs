@@ -34,17 +34,10 @@ namespace CovidNET_lib
            return collection;
         }
 
-        public async Task<GlobalInfo> GetGlobalStatisticsByDateAsync(DateTime date)
+        public async Task<GlobalInfoByDate> GetGlobalInfoByDateAsync(DateTime date)
         {
-            var dateStr = date
-                .Date
-                .ToString(CultureInfo.InvariantCulture);
-
-            var url = UrlManager.GlobalInfoByDate(dateStr);
-            
-            var request = new Requester(url);
-            var content = await request.CreateGetRequestAsync();
-            var globalInfo = content.ToGlobalInfo();
+            var content = await _covidManager.GetGlobalInfoByDateJsonContentAsync(date);
+            var globalInfo = content.ToGlobalInfoByDate();
 
             return globalInfo;
         }

@@ -25,11 +25,13 @@
         </e>
         <e p="Models" t="Include">
           <e p="CountryState.cs" t="Include" />
-          <e p="GlobalInfo.cs" t="Include" />
+          <e p="GlobalInfoByDate.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="ICountryState.cs" t="Include" />
-            <e p="IGlobalInfo.cs" t="Include" />
+            <e p="IGlobalInfoByDate.cs" t="Include" />
+            <e p="ILatestGlobalInfo.cs" t="Include" />
           </e>
+          <e p="LatestGlobalInfo.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
