@@ -112,8 +112,15 @@ namespace CovidNET_lib
         /// <param name="from">DateTime</param>
         /// <param name="to">DateTime</param>
         /// <exception cref="CovidDataNotFoundException"></exception>
+        /// <exception cref="IncorrectDateTimesException"></exception>
         public IEnumerable<CovidInfo> GetCountryTimeSeries(string country, DateTime from, DateTime to)
         {
+
+            if(from < to)
+            {
+                throw new IncorrectDateTimesException(); 
+			}
+
             var countryTimeSeries = _covidManager.CountryTimeSeriesCollection(country, from, to)
                                 .ToList();
 
