@@ -11,11 +11,11 @@ namespace CovidNET_lib.Models
          [JsonProperty("date")]
          public DateTimeOffset Date { get; set; }
          [JsonProperty("result")]
-         public IResult Result { get; set; }
+         public GlobalResult Result { get; set; }
      }
- 
- 
-     public class GlobalResult : IResult
+
+   
+     public class GlobalResult
      {
          [JsonProperty("confirmed")]
          public long Confirmed { get; set; }

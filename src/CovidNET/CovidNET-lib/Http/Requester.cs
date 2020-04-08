@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using CovidNET_lib.Http.Interfaces;
 
@@ -17,18 +18,18 @@ namespace CovidNET_lib.Http
 
         public async Task<string> CreateGetRequestAsync()
         {
-            var url = _relativeUrl;
-            string responseContent;
-            var request = (HttpWebRequest) WebRequest.Create(url);
-            request.AutomaticDecompression = DecompressionMethods.GZip;
-            using (var response = (HttpWebResponse) request.GetResponse())
+            string page = _relativeUrl;
+            using (HttpClient client = new HttpClient())
             {
-                await using var stream = response.GetResponseStream();
-                using var reader = new StreamReader(stream ?? throw new ArgumentNullException());
-                responseContent = await reader.ReadToEndAsync();
-            }
+                using (HttpResponseMessage response = await client.GetAsync(page))
+                using (HttpContent content = response.Content)
+                {
+                    string result = await content.ReadAsStringAsync();
 
-            return responseContent;
+
+                    return result;
+                }
+            }
         }
     }
 }

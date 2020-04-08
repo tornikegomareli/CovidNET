@@ -45,8 +45,7 @@ namespace CovidNET_lib
 
         internal async Task<string> GetGlobalInfoByDateJsonContentAsync(DateTime date)
         {
-            var dateStr = date.ToString("dd/MM/yyyy");
-
+            var dateStr = date.ToString("yyyy-MM-dd");
             var url = UrlManager.GlobalInfoByDate(dateStr);
             
             var request = new Requester(url);

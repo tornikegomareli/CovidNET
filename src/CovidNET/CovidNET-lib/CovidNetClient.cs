@@ -76,9 +76,11 @@ namespace CovidNET_lib
             var content = await _covidManager.GetGlobalInfoByDateJsonContentAsync(date);
             var globalInfo = content.ToGlobalInfoByDate();
 
+            var s = (globalInfo.Date.UtcDateTime).Date;
+
             return new CovidInfo()
             {
-               Date = globalInfo.Date.UtcDateTime,
+               Date = (globalInfo.Date.UtcDateTime).Date,
                Confirmed = globalInfo.Result.Confirmed,
                Deaths = globalInfo.Result.Deaths,
                Recovered = globalInfo.Result.Recovered

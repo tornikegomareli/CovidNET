@@ -12,18 +12,6 @@ namespace CovidNET_lib.Models.Interfaces
         DateTimeOffset Date { get; set; }
 
         [JsonProperty("result")]
-        IResult Result { get; set; }
-    }
-
-    public interface IResult
-    {
-        [JsonProperty("confirmed")]
-        public long Confirmed { get; set; }
-
-        [JsonProperty("deaths")]
-        public long Deaths { get; set; }
-
-        [JsonProperty("recovered")]
-        public long Recovered { get; set; }
+        GlobalResult Result { get; set; }
     }
 }

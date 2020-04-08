@@ -12,7 +12,7 @@ namespace CovidNET_lib.Utilities
 
          internal static string GlobalInfoByDate(string date)
          {
-             return Constants.CovidApiInfoBaseUrl + $"/{date}";
+             return Constants.CovidApiInfoBaseUrl + "global/" + $"{date}";
          }
      }
  }

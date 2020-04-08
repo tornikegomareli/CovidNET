@@ -14,6 +14,12 @@
         <e p="CovidDataManager.cs" t="Include" />
         <e p="CovidNET-lib.csproj" t="IncludeRecursive" />
         <e p="CovidNetClient.cs" t="Include" />
+        <e p="Exceptions" t="Include">
+          <e p="CountryNotFoundException.cs" t="Include" />
+          <e p="CovidDataNotFoundException.cs" t="Include" />
+          <e p="IncorrectDateTimesException.cs" t="Include" />
+          <e p="StringIsNullOrEmptyException.cs" t="Include" />
+        </e>
         <e p="Extensions" t="Include">
           <e p="CovidTypeExtensions.cs" t="Include" />
         </e>
