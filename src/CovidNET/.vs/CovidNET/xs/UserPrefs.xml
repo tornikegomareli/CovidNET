@@ -1,42 +1,33 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test/Program.cs">
     <Files>
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="8" Column="18" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
-      <File FileName="CovidNET-lib/Http/Requester.cs" Line="19" Column="35" />
-      <File FileName="Test/Program.cs" Line="19" Column="90" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="77" Column="56" />
-      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="54" Column="1" />
-      <File FileName="CovidNET-lib/Utilities/Converters.cs" Line="1" Column="1" />
+      <File FileName="CovidNET-lib/Http/Requester.cs" />
+      <File FileName="Test/Program.cs" Line="25" Column="72" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" />
+      <File FileName="CovidNET-lib/CovidDataManager.cs" />
+      <File FileName="CovidNET-lib/Utilities/Converters.cs" />
       <File FileName="CovidNET-lib/Exceptions/StringIsNullOrEmptyException.cs" />
       <File FileName="CovidNET-lib/Exceptions/CountryNotFoundException.cs" />
       <File FileName="CovidNET-lib/Exceptions/CovidDataNotFoundException.cs" />
       <File FileName="CovidNET-lib/Exceptions/IncorrectDateTimesException.cs" />
-      <File FileName="CovidNET-lib/Utilities/UrlManager.cs" Line="15" Column="67" />
-      <File FileName="CovidNET-lib/Extensions/CovidTypeExtensions.cs" Line="25" Column="71" />
-      <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" Line="7" Column="54" />
-      <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" Line="6" Column="22" />
+      <File FileName="CovidNET-lib/Utilities/UrlManager.cs" />
+      <File FileName="CovidNET-lib/Extensions/CovidTypeExtensions.cs" />
+      <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" />
+      <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
             <Node name="CovidNET-lib" expanded="True">
-              <Node name="Exceptions" expanded="True" />
-              <Node name="Extensions" expanded="True" />
-              <Node name="Http" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Interfaces" expanded="True">
-                  <Node name="IGlobalInfoByDate.cs" selected="True" />
-                </Node>
-              </Node>
               <Node name="Utilities" expanded="True" />
             </Node>
-            <Node name="CovidNET-tests" expanded="True">
-              <Node name="CovidClientTests" expanded="True" />
+            <Node name="Test" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="Test" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -46,12 +37,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/Test/Program.cs" relfile="Test/Program.cs" line="20" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/CovidDataManager.cs" relfile="CovidNET-lib/CovidDataManager.cs" line="54" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/Extensions/CovidTypeExtensions.cs" relfile="CovidNET-lib/Extensions/CovidTypeExtensions.cs" line="24" column="1" />
-      <Breakpoint file="/Users/tornikegomareli/Documents/Development/CovidNET/src/CovidNET/CovidNET-lib/Extensions/CovidTypeExtensions.cs" relfile="CovidNET-lib/Extensions/CovidTypeExtensions.cs" line="29" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
