@@ -80,7 +80,6 @@ namespace CovidNET_lib
 
             var indexOfFromDate = countryStates.IndexOf(countryStates.FirstOrDefault(o => o.SpecificDateTime.Date == fromDate));
             var indexOfToDate = countryStates.IndexOf(countryStates.FirstOrDefault(o => o.SpecificDateTime == toDate));
-
             return countryStates.Skip(indexOfFromDate).Take(indexOfToDate - indexOfFromDate);
         }
 

@@ -115,7 +115,7 @@ namespace CovidNET_lib
         /// <exception cref="IncorrectDateTimesException"></exception>
         public IEnumerable<CovidInfo> GetCountryTimeSeries(string country, DateTime from, DateTime to)
         {
-            if(from < to)
+            if(from > to)
             {
                 throw new IncorrectDateTimesException(); 
 			}
