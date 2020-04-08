@@ -159,7 +159,7 @@ namespace CovidNET_lib
         /// Specific country covid info, from first case till today
         /// </summary>
         /// <param name="country">string</param>
-        public async Task<CovidCountryStats> GetCurrentCovidInfoByCountry(string country)
+        public async Task<CovidCountryStats> GetCurrentCovidInfoByCountryAsync(string country)
         {
             var content = await _covidManager.GetCovidInfoContentByCountryName(country);
 
@@ -175,7 +175,7 @@ namespace CovidNET_lib
         /// <param name="dateTime">DateTime</param>
         /// <exception cref="CovidDataNotFoundException"></exception>
         /// <exception cref="IncorrectDateTimesException"></exception>
-        public async Task<CovidInfo> GetCovidCountryInfoByDate(string countryName, DateTime dateTime)
+        public async Task<CovidInfo> GetCovidCountryInfoByDateAsync(string countryName, DateTime dateTime)
         {
             if(dateTime > DateTime.Now)
             {
