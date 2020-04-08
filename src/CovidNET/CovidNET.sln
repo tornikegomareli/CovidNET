@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-lib", "CovidNET-li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-tests", "CovidNET-tests\CovidNET-tests.csproj", "{B6C2E14C-815F-428E-9E4B-F27E39F0D935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{768EDDA5-165C-4380-B697-CD8576866B6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-Samples", "Test\CovidNET-Samples.csproj", "{768EDDA5-165C-4380-B697-CD8576866B6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

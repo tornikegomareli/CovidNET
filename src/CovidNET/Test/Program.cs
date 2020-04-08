@@ -4,7 +4,7 @@ using CovidNET_lib;
 using CovidNET_lib.Http;
 using Newtonsoft.Json;
 
-namespace Test
+namespace CovidNETSamples
 {
     class Program
     {
