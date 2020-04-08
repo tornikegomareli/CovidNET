@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 // WARNING!
 // you should call every async method with await and asynchronously
 // because we are in Main, I am calling them syncrhonously.
-// Never do it in production
+// Never do it in production..
 
 namespace CovidNETSamples
 {
