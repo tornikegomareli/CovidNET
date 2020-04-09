@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>covidnet</id>
+    <version>1.0.0</version>
+    <authors>tornikegomareli</authors>
+    <owners>tornikegomareli</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/tornikegomareli/CovidNET</projectUrl>
+    <iconUrl>https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png</iconUrl>
+    <description>C# wrapper for all of the different types of Covid19 public API's, use one simple client to havea access to most useful covid19 apis</description>
+    <releaseNotes>Released first version with 3 different APIs, fully testable client methods</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>COVID19 covid c# covid19statistics api covid19wrapper</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="SampleDependency" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
