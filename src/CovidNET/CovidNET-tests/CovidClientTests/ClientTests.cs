@@ -51,5 +51,43 @@ namespace CovidNET_tests.CovidClientTests
                 var result = _covidClient.GetCountryTimeSeriesByName(countryName);
             });
         }
+
+        [Test]
+        public void GetCountryTimeSeriesByName_throwsException_if_country_not_found()
+        {
+            string countryName = "nothing";
+
+
+            Assert.Throws<CountryNotFoundException>(() =>
+            {
+                var result = _covidClient.GetCountryTimeSeriesByName(countryName);
+            });
+        }
+
+        [Test]
+        public void GetCountryTimeSeries_throwsException_if_dates_are_incorrect()
+        {
+            string countryName = "Georgia";
+            var dateTimeFrom = new DateTime(2020, 4, 3);
+            var dateTimeTo = new DateTime(2020, 3, 3);
+
+            Assert.Throws<IncorrectDateTimesException>(() =>
+            {
+                var result = _covidClient.GetCountryTimeSeries(countryName, dateTimeFrom, dateTimeTo);
+            });
+        }
+
+        [Test]
+        public void GetCountryTimeSeries_throwsException_if_dates_are_correct_butCountryNot()
+        {
+            string countryName = "noone";
+            var dateTimeFrom = new DateTime(2020, 3, 3);
+            var dateTimeTo = new DateTime(2020, 4, 3);
+
+            Assert.Throws<CountryNotFoundException>(() =>
+            {
+                var result = _covidClient.GetCountryTimeSeries(countryName, dateTimeFrom, dateTimeTo);
+            });
+        }
     }
 }

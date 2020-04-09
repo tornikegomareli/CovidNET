@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-tests/CovidClientTests/ClientTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CovidNetClient.cs">
     <Files>
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="8" Column="18" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
       <File FileName="CovidNET-lib/Http/Requester.cs" />
       <File FileName="Test/Program.cs" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="1" Column="1" />
-      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="124" Column="1" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="44" Column="65" />
+      <File FileName="CovidNET-lib/CovidDataManager.cs" />
       <File FileName="CovidNET-lib/Utilities/Converters.cs" />
       <File FileName="CovidNET-lib/Exceptions/StringIsNullOrEmptyException.cs" />
       <File FileName="CovidNET-lib/Exceptions/CountryNotFoundException.cs" />
@@ -16,24 +16,24 @@
       <File FileName="CovidNET-lib/Extensions/CovidTypeExtensions.cs" />
       <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" />
       <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" />
-      <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="7" Column="24" />
+      <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="54" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
-            <Node name="CovidNET-lib" expanded="True" />
+            <Node name="CovidNET-lib" expanded="True">
+              <Node name="CovidNetClient.cs" selected="True" />
+            </Node>
             <Node name="CovidNET-tests" expanded="True">
-              <Node name="CovidClientTests" expanded="True">
-                <Node name="ClientTests.cs" selected="True" />
-              </Node>
+              <Node name="CovidClientTests" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CovidNET-tests FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.CovidNET-tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.CovidNET-Samples PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
