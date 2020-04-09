@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-tests/CovidClientTests/ClientTests.cs">
     <Files>
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="8" Column="18" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
       <File FileName="CovidNET-lib/Http/Requester.cs" />
-      <File FileName="Test/Program.cs" Line="25" Column="72" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" />
-      <File FileName="CovidNET-lib/CovidDataManager.cs" />
+      <File FileName="Test/Program.cs" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="1" Column="1" />
+      <File FileName="CovidNET-lib/CovidDataManager.cs" Line="124" Column="1" />
       <File FileName="CovidNET-lib/Utilities/Converters.cs" />
       <File FileName="CovidNET-lib/Exceptions/StringIsNullOrEmptyException.cs" />
       <File FileName="CovidNET-lib/Exceptions/CountryNotFoundException.cs" />
@@ -16,16 +16,17 @@
       <File FileName="CovidNET-lib/Extensions/CovidTypeExtensions.cs" />
       <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" />
       <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" />
+      <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="7" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
-            <Node name="CovidNET-lib" expanded="True">
-              <Node name="Utilities" expanded="True" />
-            </Node>
-            <Node name="Test" expanded="True">
-              <Node name="Program.cs" selected="True" />
+            <Node name="CovidNET-lib" expanded="True" />
+            <Node name="CovidNET-tests" expanded="True">
+              <Node name="CovidClientTests" expanded="True">
+                <Node name="ClientTests.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
