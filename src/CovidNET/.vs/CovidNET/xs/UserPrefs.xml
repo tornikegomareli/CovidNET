@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-lib/CovidNetClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-tests/CovidClientTests/ClientTests.cs">
     <Files>
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="8" Column="18" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
       <File FileName="CovidNET-lib/Http/Requester.cs" />
       <File FileName="Test/Program.cs" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="44" Column="65" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="115" Column="57" />
       <File FileName="CovidNET-lib/CovidDataManager.cs" />
       <File FileName="CovidNET-lib/Utilities/Converters.cs" />
       <File FileName="CovidNET-lib/Exceptions/StringIsNullOrEmptyException.cs" />
@@ -16,19 +16,24 @@
       <File FileName="CovidNET-lib/Extensions/CovidTypeExtensions.cs" />
       <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" />
       <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" />
-      <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="54" Column="6" />
+      <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="35" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CovidNET" expanded="True">
-            <Node name="CovidNET-lib" expanded="True">
-              <Node name="CovidNetClient.cs" selected="True" />
-            </Node>
+            <Node name="CovidNET-lib" expanded="True" />
             <Node name="CovidNET-tests" expanded="True">
-              <Node name="CovidClientTests" expanded="True" />
+              <Node name="CovidClientTests" expanded="True">
+                <Node name="ClientTests.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CovidNET" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
