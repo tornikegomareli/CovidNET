@@ -17,7 +17,7 @@
   <h3 align="center">CovidNET</h3>
 
   <p align="center">
-    Single C# library for using different types of COVID19 API's - Work with COVID19 data from sipmle single client
+    Single C# library for using different types of COVID19 API's - Work with COVID19 data from simple single client
     <br />    ·
     <a href="https://github.com/tornikegomareli/CovidNET/issues">Report Bug</a>
     ·
