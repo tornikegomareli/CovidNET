@@ -1,11 +1,10 @@
-﻿<Properties StartupConfiguration="{768EDDA5-165C-4380-B697-CD8576866B6D}|Default">
+﻿<Properties StartupConfiguration="{B6C2E14C-815F-428E-9E4B-F27E39F0D935}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-tests/CovidClientTests/ClientTests.cs">
     <Files>
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="8" Column="18" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
       <File FileName="CovidNET-lib/Http/Requester.cs" />
-      <File FileName="Test/Program.cs" />
-      <File FileName="CovidNET-lib/CovidNetClient.cs" Line="115" Column="57" />
+      <File FileName="CovidNET-lib/CovidNetClient.cs" />
       <File FileName="CovidNET-lib/CovidDataManager.cs" />
       <File FileName="CovidNET-lib/Utilities/Converters.cs" />
       <File FileName="CovidNET-lib/Exceptions/StringIsNullOrEmptyException.cs" />
@@ -29,11 +28,6 @@
               </Node>
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="CovidNET" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
