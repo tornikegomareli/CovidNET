@@ -25,6 +25,7 @@
   </p>
 </p>
 
+⭐️ - Star repository, it helps  😊 
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
