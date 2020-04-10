@@ -3,6 +3,7 @@
 <img src="https://img.shields.io/badge/language-csharp-red.svg">
 <img src="https://img.shields.io/nuget/dt/covidnet?label=nuget-downloads">
 <img src="https://img.shields.io/badge/tests-nunit-green.svg">
+<img src="https://img.shields.io/badge/netstandard-2.1-red.svg">
 </p>  
 
 
