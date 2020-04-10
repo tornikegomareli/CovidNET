@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png">
-    <img src="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png" alt="Logo" width="80" height="150">
+    <img src="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png" alt="Logo" width="150" height="100">
   </a>
 
   <h3 align="center">CovidNET</h3>
