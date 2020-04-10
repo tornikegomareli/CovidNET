@@ -5,6 +5,10 @@
    
 <h4 align="center">CovidNET is C# library for simple usage of different types of COVID19 API's</h4>
 
+<p align="center">
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
