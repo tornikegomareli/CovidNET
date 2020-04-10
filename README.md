@@ -10,13 +10,13 @@
 <br />
 <p align="center">
   <a href="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png">
-    <img src="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png" alt="Logo" width="80" height="80">
+    <img src="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png" alt="Logo" width="80" height="150">
   </a>
 
   <h3 align="center">CovidNET</h3>
 
   <p align="center">
-    C# library for your future COVID19 proejects - Simply use different type of COVID19 APIS' from single wrapper
+    Single C# library for using different types of COVID19 API's - Work with COVID19 data from sipmle single client
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
