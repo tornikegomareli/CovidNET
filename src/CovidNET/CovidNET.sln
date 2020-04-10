@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-lib", "CovidNET-li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-tests", "CovidNET-tests\CovidNET-tests.csproj", "{B6C2E14C-815F-428E-9E4B-F27E39F0D935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-Samples", "Test\CovidNET-Samples.csproj", "{768EDDA5-165C-4380-B697-CD8576866B6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidNET-Samples", "CovidNET-Samples\CovidNET-Samples.csproj", "{6B42DCD9-C2C5-42FC-8BE5-7308034EB3AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +21,9 @@ Global
 		{B6C2E14C-815F-428E-9E4B-F27E39F0D935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C2E14C-815F-428E-9E4B-F27E39F0D935}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C2E14C-815F-428E-9E4B-F27E39F0D935}.Release|Any CPU.Build.0 = Release|Any CPU
-		{768EDDA5-165C-4380-B697-CD8576866B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{768EDDA5-165C-4380-B697-CD8576866B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{768EDDA5-165C-4380-B697-CD8576866B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{768EDDA5-165C-4380-B697-CD8576866B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B42DCD9-C2C5-42FC-8BE5-7308034EB3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B42DCD9-C2C5-42FC-8BE5-7308034EB3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B42DCD9-C2C5-42FC-8BE5-7308034EB3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B42DCD9-C2C5-42FC-8BE5-7308034EB3AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{B6C2E14C-815F-428E-9E4B-F27E39F0D935}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-tests/CovidClientTests/ClientTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CovidNET-Samples/Program.cs">
     <Files>
       <File FileName="CovidNET-lib/Utilities/Constants.cs" Line="8" Column="18" />
       <File FileName="CovidNET-lib/Http/Interfaces/IRequester.cs" />
@@ -16,25 +16,21 @@
       <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" />
       <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" />
       <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="35" Column="1" />
+      <File FileName="CovidNET-Samples/Program.cs" Line="17" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CovidNET" expanded="True">
-            <Node name="CovidNET-lib" expanded="True" />
-            <Node name="CovidNET-tests" expanded="True">
-              <Node name="CovidClientTests" expanded="True">
-                <Node name="ClientTests.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="CovidNET" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CovidNET-tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.CovidNET-Samples PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Test/CovidNET-Samples.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
