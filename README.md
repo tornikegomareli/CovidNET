@@ -170,10 +170,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Github - [tornikegomareli](https://github.com/tornikegomareli)
-Twitter - [@tornikegomareli](https://twitter.com/tornikegomareli)  
-Email -gomarelidevelopment@gmail.com
-Facebook - [tornikegomareli](https://www.facebook.com/microg)
+- Github - [tornikegomareli](https://github.com/tornikegomareli)
+- Twitter - [@tornikegomareli](https://twitter.com/tornikegomareli)  
+- Email -gomarelidevelopment@gmail.com
+- Facebook - [tornikegomareli](https://www.facebook.com/microg)
 
 Project Link: [COVIDNET](https://github.com/tornikegomareli/CovidNET)
 
