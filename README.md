@@ -4,7 +4,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="left">
+<p align="center">
   <a href="https://s3.xopic.de/openwho-public/channels/7fSc4JEBeO9H0P4b8d1Cfq/logo_v1.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
