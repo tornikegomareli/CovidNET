@@ -174,7 +174,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - Github - [tornikegomareli](https://github.com/tornikegomareli)
 - Twitter - [@tornikegomareli](https://twitter.com/tornikegomareli)  
-- Email -gomarelidevelopment@gmail.com
+- Email - gomarelidevelopment@gmail.com
 - Facebook - [tornikegomareli](https://www.facebook.com/microg)
 
 Project Link: [COVIDNET](https://github.com/tornikegomareli/CovidNET)
