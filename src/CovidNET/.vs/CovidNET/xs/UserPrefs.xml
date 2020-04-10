@@ -16,7 +16,7 @@
       <File FileName="CovidNET-lib/Models/GlobalInfoByDate.cs" />
       <File FileName="CovidNET-lib/Models/Interfaces/IGlobalInfoByDate.cs" />
       <File FileName="CovidNET-tests/CovidClientTests/ClientTests.cs" Line="35" Column="1" />
-      <File FileName="CovidNET-Samples/Program.cs" Line="17" Column="10" />
+      <File FileName="CovidNET-Samples/Program.cs" Line="12" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
