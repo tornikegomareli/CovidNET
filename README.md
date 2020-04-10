@@ -2,6 +2,7 @@
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
 <img src="https://img.shields.io/badge/language-csharp-red.svg">
 <img src="https://img.shields.io/nuget/dt/covidnet?label=nuget-downloads">
+<img src="https://img.shields.io/badge/tests-nunit-green.svg">
 </p>  
 
 
